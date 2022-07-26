@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url("system.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    width: 90%;
+    max-width: 600px;
+}
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.3s;
+}
+button{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+    background: transparent;    
+    border-radius: 20px;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .input-group{
+    flex-basis: 48%;
+}
+h1{
+    text-align: center;
+    color: #fff;
+    padding: 50px;
+    
+}
+.links{
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.links p{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.links .button-two{
+    background-color: #fff;
+    color: a;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+    margin: 3px;
+}
